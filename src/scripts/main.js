@@ -4,8 +4,7 @@ function waitFor(element, eventName) {
   return new Promise((resolve, reject) => {
     element.addEventListener(eventName, (act) => {
       if (act) {
-        resolve(`It was ${eventName}
-          on the element: ${element.nodeName}, id: ${element.id}.`);
+        resolve(`It was ${eventName} on the element: ${element.nodeName}, id: ${element.id}.`);
       }
     });
   });
